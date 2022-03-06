@@ -6,14 +6,24 @@ Algunos de los grandes contribuyentes actuales en el área de tecnología, se un
 
 En este curso se muestra como construir un subconjunto de SweRVolfX SoC desde cero utilizando bloques de construcción como el núcleo SweRV, las memorias y los periféricos, mediante el software de Vivado.
 
+Inicialmente se busca crear un diagrama de bloques en el cuál se incluyen los siguientes bloques de vivado:
+
+| No. 	| Módulo               	| Vivado bloque         	|
+|-----	|----------------------	|-----------------------	|
+| 1   	| SweRV Core           	| swerv_wrapper_verilog 	|
+| 1   	| Interconnect Wrapper 	| intcon_wrapper_bd     	|
+| 1   	| Boot-ROM             	| bootrom_wrapper       	|
+| 1   	| GPIO Top Module      	| gpio_wrapper          	|
+| 1   	| System Controller    	| syscon_wrapper        	|
+| 32  	| Bidirec Gpio Module  	| bidirec               	|
+
+Estos módulos se interconectan mediante un instructivo proporcionado por _Imaginaton_, donde se especifican las conecciones.
+
+Inicialmente se conectan los bloques `swerv_wrapper_verilog` y `intcon_wrapper_bd`, en estos bloques hay tres tipos de sets de pines, los cuales son,  IFU (_Instruction Fetch Unit_), LSU (_Load Store Unit_) y SB (_Store Byte_). La conexión se realizará en el orden mencionado anteriormente.
 
 
-           
-___________________________________________________________________________________________
-~~Strikethrough~~ <s>Strikethrough (when enable html tag decode.)</s>
-*Italic*      _Italic_
-**Emphasis**  __Emphasis__
-***Emphasis Italic*** ___Emphasis Italic___
+###Characters
+                
 
 Superscript: X<sub>2</sub>，Subscript: O<sup>2</sup>
 
@@ -21,7 +31,6 @@ Superscript: X<sub>2</sub>，Subscript: O<sup>2</sup>
 
 The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.
 
-###Blockquotes
 
 ###Links
 
@@ -29,11 +38,16 @@ The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is mainta
 
 [Links with title](http://localhost/ "link title")
 
+`<link>` : <https://github.com>
+
+[Reference link][id/name] 
+
+[id/name]: http://link-url/
+
 
 ejem imagen
 
 ![Alt text](https://i.imgur.com/ZgpiGM3.png)
-_______________________________________________________________________
 
 ### 🔖 Conclusiones
 
@@ -54,5 +68,5 @@ ejemplo referencias
 
 #### Universidad Industrial de Santander
 * 👩 Francy Jessenia Calderón Osorio - 2162491
-* 👩 Andrea Paola Reyes Carreño - 2164095
+* 👩 Andrea Paola Reyes Carreño - 
 
