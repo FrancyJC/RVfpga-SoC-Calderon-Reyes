@@ -28,12 +28,12 @@ Luego de tener el diagrama de bloques completo se procede a generar el archivo d
 
 ![Alt text]()
 
-### 🔖 Conclusiones
+## 🔖 Conclusiones
 
 *
 
 
-### 📚 Referencias
+## 📚 Referencias
 
 * [Imagination University Programme](https://university.imgtec.com/) 
 * [RVfpga – Introduction to RVfpgaSoC  V1.0](https://university.imgtec.com/resources/download/rvfpgasoc-v1-0/)
