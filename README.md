@@ -1,6 +1,6 @@
 # 📚 Proyecto Arquitectura de Computadores I.
 
-## 💻 RVfpgaSoC
+# 💻 RVfpgaSoC
 
 Algunos de los grandes contribuyentes actuales en el área de tecnología, se unieron para crear y impartir un curso para el aprendizaje y estudio de SoCs, _System-on-Chips_, entre ellas resaltan Diligent, RISC-V, Xilinx, Imagination entre otros. 
 
