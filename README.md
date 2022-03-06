@@ -42,5 +42,5 @@ Inicialmente se conectan los bloques `swerv_wrapper_verilog` y `intcon_wrapper_b
 
 #### Universidad Industrial de Santander
 * 👩 Francy Jessenia Calderón Osorio - 2162491
-* 👩 Andrea Paola Reyes Carreño - 
+* 👩 Andrea Paola Reyes Carreño - 2164095
 
