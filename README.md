@@ -26,6 +26,7 @@ Inicialmente se conectan los bloques `swerv_wrapper_verilog` y `intcon_wrapper_b
 
 Luego de tener el diagrama de bloques completo se procede a generar el archivo de módulo Verilog configurando en el archivo de Vivado, al obtener el archivo `BD.v` se procede a generar el _bitstream_, donde se muestra si el proceso fue realizado correctamente o genera algún error.
 
+![Alt text](https://i.imgur.com/CBHLDqr.png)
 ## 📌  Parte 2
 
 ![Alt text]()
