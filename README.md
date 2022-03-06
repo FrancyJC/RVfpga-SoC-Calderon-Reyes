@@ -8,14 +8,14 @@ En este curso se muestra como construir un subconjunto de SweRVolfX SoC desde ce
 
 Inicialmente se busca crear un diagrama de bloques en el cuál se incluyen los siguientes bloques de vivado:
 
-| No. 	| Módulo               	| Vivado bloque         	|
-|-----	|----------------------	|-----------------------	|
-| 1   	| SweRV Core           	| swerv_wrapper_verilog 	|
-| 1   	| Interconnect Wrapper 	| intcon_wrapper_bd     	|
-| 1   	| Boot-ROM             	| bootrom_wrapper       	|
-| 1   	| GPIO Top Module      	| gpio_wrapper          	|
-| 1   	| System Controller    	| syscon_wrapper        	|
-| 32  	| Bidirec Gpio Module  	| bidirec               	|
+| **No.** 	| **Módulo**           	| **Vivado bloque**     	|
+|---------	|----------------------	|-----------------------	|
+| **1**   	| SweRV Core           	| swerv_wrapper_verilog 	|
+| **1**   	| Interconnect Wrapper 	| intcon_wrapper_bd     	|
+| **1**   	| Boot-ROM             	| bootrom_wrapper       	|
+| **1**   	| GPIO Top Module      	| gpio_wrapper          	|
+| **1**   	| System Controller    	| syscon_wrapper        	|
+| **32**  	| Bidirec Gpio Module  	| bidirec               	|
 
 Estos módulos se interconectan mediante un instructivo proporcionado por _Imaginaton_, donde se especifican las conecciones.
 
