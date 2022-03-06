@@ -23,32 +23,7 @@ Inicialmente se conectan los bloques `swerv_wrapper_verilog` y `intcon_wrapper_b
 
 
 
-###Characters
-                
-
-Superscript: X<sub>2</sub>，Subscript: O<sup>2</sup>
-
-**Abbreviation(link HTML abbr tag)**
-
-The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.
-
-
-###Links
-
-[Links](http://localhost/)
-
-[Links with title](http://localhost/ "link title")
-
-`<link>` : <https://github.com>
-
-[Reference link][id/name] 
-
-[id/name]: http://link-url/
-
-
-ejem imagen
-
-![Alt text](https://i.imgur.com/ZgpiGM3.png)
+![Alt text]()
 
 ### 🔖 Conclusiones
 
@@ -56,13 +31,11 @@ ejem imagen
 
 
 ### 📚 Referencias
-ejemplo referencias
 
-* [HDLbits](https://hdlbits.01xz.net/wiki/Module_fadd) 
-* [YosysHQ](https://www.yosyshq.com/)
-* [Karnaugh Map](https://www.geeksforgeeks.org/introduction-of-k-map-karnaugh-map/)
-* [SimuladorTablas](https://logicaunad.com/simulador-tablas/)
-
+* [Imagination University Programme](https://university.imgtec.com/) 
+* [RVfpga – Introduction to RVfpgaSoC  V1.0](https://university.imgtec.com/resources/download/rvfpgasoc-v1-0/)
+* [EH1 RISC-V SweRV CoreTM 1.9 from Western Digital](https://github.com/chipsalliance/Cores-SweRV.git) 
+* [SweRVolf](https://github.com/chipsalliance/Cores-SweRVolf.git) 
 
 
 
