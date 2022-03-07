@@ -33,6 +33,20 @@ Al realizar la generación del _Bitstream_ se obtienen que la síntesis, impleme
 
 ## 📌  Segunda parte -Simulación del SweRVolfX SoC-
 
+
+Esta sección se puede realizar en simulación e implementandola en la fpga, sin embargo para la realización de este se llevará a cabo sólo la parte de simulación, esta además será realizada mediante las herramientas instaldas en Windows.
+
+* VSCode
+* PlatformIO
+* GTKWave
+* Cygwin
+
+En la simulación se empleará una estructura cómo la que se muestra a continuación, teniendo como _top module_ el archivo `rvfpgasim`.
+
+![Alt text](https://i.imgur.com/j6OcABD.png)
+
+La simulación se llevará a cabo mediante Verilator. 
+
 ![Alt text]()
 
 ## 🔖 Conclusiones
