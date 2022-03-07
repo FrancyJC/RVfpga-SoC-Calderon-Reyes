@@ -69,7 +69,11 @@ Ahora teniendo este archivo se verifica que existan y esten exactamente los nomb
 
 #### 3. Generar la simulación Binaria.
 
-Para ello se ingresa a la dirección `RVfpgaSoC/Labs/LabResources/Lab2/verilatorSIM` deonde se encuentran los archivos `Makefile` y `swervolf_0.7.vc` los cuales brindan a Verilator información sobre donde encontrar las fuentes SoC. Luego se genera el archivo binario mediante estos comandos.
+Para ello se ingresa a la dirección `RVfpgaSoC/Labs/LabResources/Lab2/verilatorSIM` donde se encuentran los archivos `Makefile` y `swervolf_0.7.vc` los cuales brindan a Verilator información sobre donde encontrar las fuentes SoC. 
+
+![Alt text](https://i.imgur.com/thVUUrt.png)
+
+Luego se genera el archivo binario mediante estos comandos.
 
 ```sh
 /cygdrive/c/Users/Lenovo/Downloads/RVfpgaSoC/RVfpgaSoC/Labs/LabResources/Lab2/verilatorSIM
@@ -81,18 +85,26 @@ make clean
 clean
 ```
 
-![Alt text](https://i.imgur.com/thVUUrt.png)
+
 
 ### Problemas presentados
 
-Error parte2, paso 3
+* Error al generar la simulación Binaria.
+
+Luego de correr los comandos mencionado en esta sección, se muestran estos errores, en el archivo `verilater.cpp`.
 
 ![Alt text](https://i.imgur.com/cptHnjR.png)
-Se soluciona añadiendo librerías 
-#include<limits>
-#include<cstddef>
-#include<iostream>
 
+Se soluciona añadiendo algunas librerías faltantes en el mismo archivo, como se muestra en la imagen.
+
+`#include<limits>`
+`#include<cstddef>`
+`#include<iostream>`
+
+![Alt text](https://i.imgur.com/jYX7GSe.png)
+
+
+![Alt text]()
 ## 🔖 Conclusiones
 
 *
