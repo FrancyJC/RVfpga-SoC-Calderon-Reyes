@@ -94,8 +94,19 @@ Luego de editar esta línea se procede correr la simulación y generar la traza 
 
 ![Alt text](https://i.imgur.com/1tkhRWw.png)
 
+#### 5. 
+
 ![Alt text]()
 ### Problemas presentados
+
+* Error en Vivado al generar el Bitstream.
+
+Al terminar de crear el diagrama de bloques en vivado y realizar las debidas configuraciones, se procede a fenerar el bitstream sin embargo se generan una serie de errores plasmados a continuación.
+
+![Alt text](https://i.imgur.com/gHgeoUj.png)
+
+Para resolver estos errores se procede a revisar cada bloque empleado en el diagrama,  sin embargo no se encuentra ninguna falla en esto. Otro aspecto qeu se tuvo en cuenta es que la versión de Vivado empleada inicialmente era la 2018.3, se actualizó a la versión solicitada en el curso, la 2019.2 y se realizó nuevamente el proceso, logrando así la correcta generación del birstream.
+
 
 * Error al generar la simulación Binaria.
 
