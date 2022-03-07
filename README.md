@@ -132,6 +132,7 @@ Se soluciona añadiendo algunas librerías faltantes en el mismo archivo, como s
 * El enfoque del curso ofrecido por Imagination, genera que el estudiante sienta curiosidad por investigar y abarcar más sobre estos temas, debido a que aunque no se tenga una fpga física, la herramienta de simulación es muy óptima para entender del tema.
 
 
+
 ## 📚 Referencias
 
 * [Imagination University Programme](https://university.imgtec.com/) 
