@@ -131,6 +131,8 @@ Se soluciona añadiendo algunas librerías faltantes en el mismo archivo, como s
 
 * El enfoque del curso ofrecido por Imagination, genera que el estudiante sienta curiosidad por investigar y abarcar más sobre estos temas, debido a que aunque no se tenga una fpga física, la herramienta de simulación es muy óptima para entender del tema.
 
+* En cuanto al desarrollo de los  laboratorios muestran cómo crear un SoC a partir de un núcleo y otros componentes básicos los cuales se trabajaron en el Laboratorio 1 y luego  cómo apuntarlo a un FPGA y ejecutar programas en el SoC recién creado (Laboratorios 2)
+
 
 
 ## 📚 Referencias
