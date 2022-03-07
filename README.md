@@ -43,7 +43,7 @@ Esta sección se puede realizar en simulación e implementandola en la fpga, sin
 
 Esta parte se desarrolla mediante una serie de pasos.
 
-### 1. Copiar el archivo `BD.v`
+### ✔️1. Copiar el archivo `BD.v`
 
 En la simulación se empleará una estructura cómo la que se muestra a continuación, teniendo como _top module_ el archivo `rvfpgasim`.
 
@@ -54,7 +54,7 @@ La simulación se trabajará mediante Verilator, Primero se debe buscar el archi
 
 ![Alt text](https://i.imgur.com/RD0lpok.png)
 
-### 2. Verificación de los modulos.
+### ✔️2. Verificación de los modulos.
 
 Ahora teniendo este archivo se verifica que existan y esten exactamente los nombres de los siguientes modulos: 
 
@@ -67,7 +67,7 @@ Ahora teniendo este archivo se verifica que existan y esten exactamente los nomb
 ![Alt text](https://i.imgur.com/U6Dm4sa.png)
 
 
-### 3. Generar la simulación Binaria.
+### ✔️ 3. Generar la simulación Binaria.
 
 Para ello se ingresa a la dirección `RVfpgaSoC/Labs/LabResources/Lab2/verilatorSIM` donde se encuentran los archivos `Makefile` y `swervolf_0.7.vc` los cuales brindan a Verilator información sobre donde encontrar las fuentes SoC. 
 
@@ -86,7 +86,7 @@ clean
 ```
 Con esto se genera un archivo RVfpgaSim, que posteriormente se utilizará para crear la traza de simulación del programa AL-Operations.
 
-### 4. Generar la traza de simulación desde PlatformIO.
+### ✔️ 4. Generar la traza de simulación desde PlatformIO.
 
 Se abre desde _PlatformIO_ la carpeta `AL_Operations` en ella se encuentra el archivo `platformio.ini`, se abre para editar una línea donde se encuentra al ruta del archivo al cuál se le va a generar la traza, en este caso al final de la ruta establecida se agrega el archivo, `Vrvfpgasim.exe.` debido a que se está trabajando en Windows.
 
@@ -94,7 +94,7 @@ Luego de editar esta línea se procede correr la simulación y generar la traza 
 
 ![Alt text](https://i.imgur.com/1tkhRWw.png)
 
-### 5. Análisis de la simulación con GTKWave.
+### ✔️ 5. Análisis de la simulación con GTKWave.
 
 
 ![Alt text]()
