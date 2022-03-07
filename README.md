@@ -84,10 +84,11 @@ make clean
 ```sh
 clean
 ```
+Con esto se genera un archivo RVfpgaSim, que posteriormente se utilizará para crear la traza de simulación del programa AL-Operations.
 
 #### 4. Generar la traza de simulación desde PlatformIO.
 
-Se abre desde _PlatformIO_ la carpeta `AL_Operations` en ella se encuentra el archivo `platformio.ini`, se abre para editar una línea donde se encuntra la ruta del archivo al cuál se le va a generar la traza, en este caso, `Vrvfpgasim.exe.` pues se está trabajando en Windows.
+Se abre desde _PlatformIO_ la carpeta `AL_Operations` en ella se encuentra el archivo `platformio.ini`, se abre para editar una línea donde se encuntra al ruta del archivo al cuál se le va a generar la traza, en este caso, `Vrvfpgasim.exe.` pues se está trabajando en Windows.
 
 Luego de editar esta línea se procede correr al simulación y generar la traza en la opción `Generate Trace`, luego de ello si se obtiene un `SUCCESS` como resultado indica que está correcto.
 
