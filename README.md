@@ -99,7 +99,7 @@ Luego de editar esta línea se procede correr la simulación y generar la traza 
 
 ![Alt text]()
 
-### ❌ Problemas presentados
+## ❌ Problemas presentados
 
 * ### 🚩 Error en Vivado al generar el Bitstream.
 
