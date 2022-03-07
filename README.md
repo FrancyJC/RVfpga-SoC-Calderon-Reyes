@@ -1,6 +1,6 @@
 # 📚 Proyecto Arquitectura de Computadores I.
 
-# 💻 RVfpgaSoC
+# 💻 RVFPGASoC
 
 Algunos de los grandes contribuyentes actuales en el área de tecnología, se unieron para crear e impartir un curso para el aprendizaje y estudio de SoCs, _System-on-Chips_, entre ellas resaltan Diligent, RISC-V, Xilinx, Imagination entre otros. 
 
@@ -34,7 +34,7 @@ Al realizar la generación del _Bitstream_ se obtiene que la síntesis, implemen
 ## 📌  Segunda parte -Simulación del SweRVolfX SoC-
 
 
-Esta sección se puede realizar en simulación e implementandola en la fpga, sin embargo para la realización de esté se llevará a cabo sólo la parte de simulación, además será realizada mediante las herramientas instaladas en Windows.
+Esta sección se puede realizar en simulación e implementandola en la FPGA, sin embargo para la realización de esté se llevará a cabo sólo la parte de simulación, además será realizada mediante las herramientas instaladas en Windows.
 
 * VSCode
 * PlatformIO
@@ -85,7 +85,7 @@ make clean
 ```sh
 make
 ```
-Con esto se genera un archivo RVfpgaSim, que posteriormente se utilizará para crear la traza de simulación del programa AL-Operations.
+Con esto se genera un archivo RVFPGASim, que posteriormente se utilizará para crear la traza de simulación del programa AL-Operations.
 
 ### ✔️ 4. Generar la traza de simulación desde PlatformIO.
 
@@ -130,7 +130,7 @@ Se soluciona añadiendo algunas librerías faltantes en el mismo archivo, como s
 
 ## 🔖 Conclusiones
 
-* El enfoque del curso ofrecido por Imagination, genera que el estudiante sienta curiosidad por investigar y abarcar más sobre estos temas, debido a que aunque no se tenga una fpga física, la herramienta de simulación es muy óptima para entender del tema.
+* El enfoque del curso ofrecido por Imagination, genera que el estudiante sienta curiosidad por investigar y abarcar más sobre estos temas, debido a que aunque no se tenga una FPGA física, la herramienta de simulación es muy óptima para entender del tema.
 
 * En cuanto al desarrollo de los  laboratorios muestran cómo crear un SoC a partir de un núcleo y otros componentes básicos los cuales se trabajaron en el Laboratorio 1 y luego  cómo apuntarlo a un FPGA y ejecutar programas en el SoC recién creado (Laboratorios 2)
 
