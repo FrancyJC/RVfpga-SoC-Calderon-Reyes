@@ -29,7 +29,7 @@ Luego de tener el diagrama de bloques completo se procede a generar el archivo d
 
 ![Alt text](https://i.imgur.com/ETXEuHu.png)
 
-Al realizar la generación del _Bitstream_ se obtienen que la síntesis, implementación y generación han sido realizadas completamente. 
+Al realizar la generación del _Bitstream_ se obtiene que la síntesis, implementación y generación han sido realizadas completamente. 
 
 ## 📌  Segunda parte -Simulación del SweRVolfX SoC-
 
@@ -82,7 +82,7 @@ Luego se genera el archivo binario mediante estos comandos.
 make clean
 ```
 ```sh
-clean
+make
 ```
 Con esto se genera un archivo RVfpgaSim, que posteriormente se utilizará para crear la traza de simulación del programa AL-Operations.
 
