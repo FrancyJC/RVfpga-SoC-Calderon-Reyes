@@ -10,14 +10,14 @@ El proyecto se lleva a cabo en dos partes esenciales, la creación de un bloque 
 ## 📌  Primera parte -Creación del diagrama de bloques-
 Inicialmente se busca crear un diagrama de bloques en el cuál se incluyen los siguientes bloques de vivado:
 
-| **No.** 	| **Módulo**           	| **Vivado bloque**     	|
-|---------	|----------------------	|-----------------------	|
-| **1**   	| SweRV Core           	| swerv_wrapper_verilog 	|
-| **1**   	| Interconnect Wrapper 	| intcon_wrapper_bd     	|
-| **1**   	| Boot-ROM             	| bootrom_wrapper       	|
-| **1**   	| GPIO Top Module      	| gpio_wrapper          	|
-| **1**   	| System Controller    	| syscon_wrapper        	|
-| **32**  	| Bidirec Gpio Module  	| bidirec               	|
+| No. 	| **Módulo**             	| **Vivado bloque**     	|
+|-----	|------------------------	|-----------------------	|
+| 1   	| SweRV _Core_           	| swerv_wrapper_verilog 	|
+| 1   	| _Interconnect Wrapper_ 	| intcon_wrapper_bd     	|
+| 1   	| _Boot-ROM_             	| bootrom_wrapper       	|
+| 1   	| _GPIO Top Module_      	| gpio_wrapper          	|
+| 1   	| _System Controller_    	| syscon_wrapper        	|
+| 32  	| _Bidirec Gpio Module_  	| bidirec               	|
 
 
 Estos módulos se interconectan mediante un instructivo proporcionado por _Imagination_, donde se especifican las conexiones.
@@ -35,6 +35,7 @@ Al realizar la generación del _Bitstream_ se obtiene que la síntesis, implemen
 
 
 Esta sección se puede realizar en simulación e implementandola en la fpga, sin embargo para la realización de esté se llevará a cabo sólo la parte de simulación, además será realizada mediante las herramientas instaladas en Windows.
+
 * VSCode
 * PlatformIO
 * GTKWave
@@ -58,11 +59,11 @@ La simulación se trabajará mediante Verilator, Primero se debe buscar el archi
 
 Ahora teniendo este archivo se verifica que existan y esten exactamente los nombres de los siguientes modulos: 
 
-* BD_bootrom_wrapper_0_0
-* BD_gpio_wrapper_0_0
-* BD_intcon_wrapper_bd_0_0
-* BD_swerv_wrapper_verilog_0_0
-* BD_syscon_wrapper_0_0
+* _BD_bootrom_wrapper_0_0_
+* _BD_gpio_wrapper_0_0_
+* _BD_intcon_wrapper_bd_0_0_
+* _BD_swerv_wrapper_verilog_0_0_
+* _BD_syscon_wrapper_0_0_
 
 ![Alt text](https://i.imgur.com/U6Dm4sa.png)
 
@@ -99,9 +100,9 @@ Luego de editar esta línea se procede correr la simulación y generar la traza 
 
 ![Alt text]()
 
-## ❌ Problemas presentados
+## ❌ Problemas presentados y solucionados.
 
-* ### 🚩 Error en Vivado al generar el Bitstream.
+* ### 🚩 Error en Vivado al generar el _Bitstream_.
 
 Al terminar de crear el diagrama de bloques en vivado y realizar las debidas configuraciones, se procede a fenerar el bitstream sin embargo se generan una serie de errores plasmados a continuación.
 
@@ -110,7 +111,7 @@ Al terminar de crear el diagrama de bloques en vivado y realizar las debidas con
 Para resolver estos errores se procede a revisar cada bloque empleado en el diagrama,  sin embargo no se encuentra ninguna falla en esto. Otro aspecto que se tuvo en cuenta es que la versión de Vivado empleada inicialmente era la 2018.3, se actualizó a la versión solicitada en el curso, la 2019.2 y se realizó nuevamente el proceso, logrando así la correcta generación del birstream.
 
 
-* ### 🚩Error al generar la simulación Binaria.
+* ### 🚩Error al generar la simulación binaria.
 
 Luego de correr los comandos mencionado en esta sección, se muestran estos errores, en el archivo `verilater.cpp`.
 
