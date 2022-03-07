@@ -20,7 +20,7 @@ Inicialmente se busca crear un diagrama de bloques en el cuál se incluyen los s
 | **32**  	| Bidirec Gpio Module  	| bidirec               	|
 
 
-Estos módulos se interconectan mediante un instructivo proporcionado por _Imaginaton_, donde se especifican las conecciones.
+Estos módulos se interconectan mediante un instructivo proporcionado por _Imagination_, donde se especifican las conexiones.
 
 Inicialmente se conectan los bloques `swerv_wrapper_verilog` y `intcon_wrapper_bd`, en estos bloques hay tres tipos de sets de pines, los cuales son,  IFU (_Instruction Fetch Unit_), LSU (_Load Store Unit_) y SB (_Store Byte_). La conexión se realiza en el orden mencionado anteriormente, se continúa con el paso a paso de los otros bloques, al terminar las conexiones internas se inician las conexiones externas, estas son el reloj `clk`, el reset, `rst`, las memorias y finalmente los pines `bidir` de lso bloques bidirec, terminando con estos todas las conexiones del diagrama.
 
