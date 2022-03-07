@@ -7,27 +7,29 @@ Algunos de los grandes contribuyentes actuales en el área de tecnología, se un
 En este curso se muestra como construir un subconjunto de SweRVolfX SoC desde cero utilizando bloques de construcción como el núcleo SweRV, las memorias y los periféricos, mediante el software de Vivado.
 El proyecto se lleva a cabo en dos partes esenciales, la creación de un bloque mediante Vivado, y luego la ejecución de este mediante simulación con Verilator.
 
-## 📌  Parte 1
+## 📌  Primera parte -Creación del diagrma de bloques-
 Inicialmente se busca crear un diagrama de bloques en el cuál se incluyen los siguientes bloques de vivado:
 
-| No. 	| **Módulo**           	| **Vivado bloque**     	|
-|-----	|----------------------	|-----------------------	|
-| 1   	| SweRV Core           	| swerv_wrapper_verilog 	|
-| 1   	| Interconnect Wrapper 	| intcon_wrapper_bd     	|
-| 1   	| Boot-ROM             	| bootrom_wrapper       	|
-| 1   	| GPIO Top Module      	| gpio_wrapper          	|
-| 1   	| System Controller    	| syscon_wrapper        	|
-| 32  	| Bidirec Gpio Module  	| bidirec               	|
-
-
+| **No.** 	| **Módulo**           	| **Vivado bloque**     	|
+|---------	|----------------------	|-----------------------	|
+| **1**   	| SweRV Core           	| swerv_wrapper_verilog 	|
+| **1**   	| Interconnect Wrapper 	| intcon_wrapper_bd     	|
+| **1**   	| Boot-ROM             	| bootrom_wrapper       	|
+| **1**   	| GPIO Top Module      	| gpio_wrapper          	|
+| **1**   	| System Controller    	| syscon_wrapper        	|
+| **32**  	| Bidirec Gpio Module  	| bidirec               	|
 Estos módulos se interconectan mediante un instructivo proporcionado por _Imaginaton_, donde se especifican las conecciones.
 
 Inicialmente se conectan los bloques `swerv_wrapper_verilog` y `intcon_wrapper_bd`, en estos bloques hay tres tipos de sets de pines, los cuales son,  IFU (_Instruction Fetch Unit_), LSU (_Load Store Unit_) y SB (_Store Byte_). La conexión se realiza en el orden mencionado anteriormente, se continúa con el paso a paso de los otros bloques, al terminar las conexiones internas se inician las conexiones externas, estas son el reloj `clk`, el reset, `rst`, las memorias y finalmente los pines `bidir` de lso bloques bidirec, terminando con estos todas las conexiones del diagrama.
 
 Luego de tener el diagrama de bloques completo se procede a generar el archivo de módulo Verilog configurando en el archivo de Vivado, al obtener el archivo `BD.v` se procede a generar el _bitstream_, donde se muestra si el proceso fue realizado correctamente o genera algún error.
 
+
 ![Alt text](https://i.imgur.com/ETXEuHu.png)
-## 📌  Parte 2
+
+Al realizar la generación del _Bitstream_ se obtienen que la síntesis, implementación y generación han sido realizadas completamente. 
+
+## 📌  Segunda parte -Simulación del SweRVolfX SoC-
 
 ![Alt text]()
 
