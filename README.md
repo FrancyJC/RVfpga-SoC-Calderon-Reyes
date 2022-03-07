@@ -40,20 +40,21 @@ Esta sección se puede realizar en simulación e implementandola en la fpga, sin
 * GTKWave
 * Cygwin
 
+
 Esta parte se desarrolla mediante una serie de pasos.
 
-##### 1. Copiar el archivo `BD.v`
+#### 1. Copiar el archivo `BD.v`
 
 En la simulación se empleará una estructura cómo la que se muestra a continuación, teniendo como _top module_ el archivo `rvfpgasim`.
 
 ![Alt text](https://i.imgur.com/j6OcABD.png)
 
-La simulación se trabajará mediante Verilator, Primero se debe buscar el archivo generado en la primera parte del Lab1 llamado `BD.v`, posteriormente se anexa a la ruta `RVfpgaSoC/Labs/LabResources/Lab2/src/SweRVolfSoC` como se muestra en la siguiente figura.
+La simulación se trabajará mediante Verilator, Primero se debe buscar el archivo generado en la primera parte (Lab1), llamado `BD.v`, para anexarlo a la ruta `RVfpgaSoC/Labs/LabResources/Lab2/src/SweRVolfSoC` como se muestra en la siguiente figura.
 
 
 ![Alt text](https://i.imgur.com/RD0lpok.png)
 
-##### 2. Verificación de los modulos.
+#### 2. Verificación de los modulos.
 
 Ahora teniendo este archivo se verifica que existan y esten exactamente los nombres de los siguientes modulos: 
 
@@ -66,7 +67,32 @@ Ahora teniendo este archivo se verifica que existan y esten exactamente los nomb
 ![Alt text](https://i.imgur.com/U6Dm4sa.png)
 
 
-![Alt text]()
+#### 3. Generar la simulación Binaria.
+
+Para ello se ingresa a la dirección `RVfpgaSoC/Labs/LabResources/Lab2/verilatorSIM` deonde se encuentran los archivos `Makefile` y `swervolf_0.7.vc` los cuales brindan a Verilator información sobre donde encontrar las fuentes SoC. Luego se genera el archivo binario mediante estos comandos.
+
+```sh
+/cygdrive/c/Users/Lenovo/Downloads/RVfpgaSoC/RVfpgaSoC/Labs/LabResources/Lab2/verilatorSIM
+```
+```sh
+make clean
+```
+```sh
+clean
+```
+
+![Alt text](https://i.imgur.com/thVUUrt.png)
+
+### Problemas presentados
+
+Error parte2, paso 3
+
+![Alt text](https://i.imgur.com/cptHnjR.png)
+Se soluciona añadiendo librerías 
+#include<limits>
+#include<cstddef>
+#include<iostream>
+
 ## 🔖 Conclusiones
 
 *
