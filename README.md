@@ -7,7 +7,7 @@ Algunos de los grandes contribuyentes actuales en el área de tecnología, se un
 En este curso se muestra como construir un subconjunto de SweRVolfX SoC desde cero utilizando bloques de construcción como el núcleo SweRV, las memorias y los periféricos, mediante el software de Vivado.
 El proyecto se lleva a cabo en dos partes esenciales, la creación de un bloque mediante Vivado, y luego la ejecución de este mediante simulación con Verilator.
 
-## 📌  Primera parte -Creación del diagrma de bloques-
+## 📌  Primera parte -Creación del diagrama de bloques-
 Inicialmente se busca crear un diagrama de bloques en el cuál se incluyen los siguientes bloques de vivado:
 
 | **No.** 	| **Módulo**           	| **Vivado bloque**     	|
