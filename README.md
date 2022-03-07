@@ -90,7 +90,7 @@ Con esto se genera un archivo RVfpgaSim, que posteriormente se utilizará para c
 
 Se abre desde _PlatformIO_ la carpeta `AL_Operations` en ella se encuentra el archivo `platformio.ini`, se abre para editar una línea donde se encuentra al ruta del archivo al cuál se le va a generar la traza, en este caso al final de la ruta establecida se agrega el archivo, `Vrvfpgasim.exe.` debido a que se está trabajando en Windows.
 
-Luego de editar esta línea se procede correr al simulación y generar la traza en la opción `Generate Trace`, luego de ello si se obtiene un `SUCCESS` como resultado indica que está correcto.
+Luego de editar esta línea se procede correr la simulación y generar la traza en la opción `Generate Trace`, luego de ello si se obtiene un `SUCCESS` como resultado indica que está correcto.
 
 ![Alt text](https://i.imgur.com/1tkhRWw.png)
 
