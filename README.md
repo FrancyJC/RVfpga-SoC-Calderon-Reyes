@@ -34,13 +34,13 @@ Al realizar la generación del _Bitstream_ se obtienen que la síntesis, impleme
 ## 📌  Segunda parte -Simulación del SweRVolfX SoC-
 
 
-Esta sección se puede realizar en simulación e implementandola en la fpga, sin embargo para la realización de este se llevará a cabo sólo la parte de simulación, esta además será realizada mediante las herramientas instaldas en Windows.
-Esta parte se desarrolla por mediante una serie de pasos.
-
+Esta sección se puede realizar en simulación e implementandola en la fpga, sin embargo para la realización de esté se llevará a cabo sólo la parte de simulación, además será realizada mediante las herramientas instaladas en Windows.
 * VSCode
 * PlatformIO
 * GTKWave
 * Cygwin
+* 
+Esta parte se desarrolla mediante una serie de pasos.
 
 ##### 1. Copiar el archivo `BD.v`
 
@@ -48,12 +48,12 @@ En la simulación se empleará una estructura cómo la que se muestra a continua
 
 ![Alt text](https://i.imgur.com/j6OcABD.png)
 
-La simulación se llevará a cabo mediante Verilator.  Primero se debe buscar el archivo generado en la primera parte, llamado `BD.v`, para anexarlo a la ruta `RVfpgaSoC/Labs/LabResources/Lab2/src/SweRVolfSoC` como se muestra en la siguiente figura.
+La simulación se trabajará mediante Verilator, Primero se debe buscar el archivo generado en la primera parte (Lab1), llamado `BD.v`, para anexarlo a la ruta `RVfpgaSoC/Labs/LabResources/Lab2/src/SweRVolfSoC` como se muestra en la siguiente figura.
 
 ![Alt text](https://i.imgur.com/EJXBFSb.png)
 ##### 2. Verificación de los modulos.
 
-Ahora teniendo este archivo se verifica que existan y esten exactamente los nombres de los sigueinets modulos: 
+Ahora teniendo este archivo se verifica que existan y esten exactamente los nombres de los siguientes modulos: 
 
 ●	BD_bootrom_wrapper_0_0
 ●	BD_gpio_wrapper_0_0
