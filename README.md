@@ -39,7 +39,7 @@ Esta sección se puede realizar en simulación e implementandola en la fpga, sin
 * PlatformIO
 * GTKWave
 * Cygwin
-* 
+
 Esta parte se desarrolla mediante una serie de pasos.
 
 ##### 1. Copiar el archivo `BD.v`
@@ -50,21 +50,23 @@ En la simulación se empleará una estructura cómo la que se muestra a continua
 
 La simulación se trabajará mediante Verilator, Primero se debe buscar el archivo generado en la primera parte (Lab1), llamado `BD.v`, para anexarlo a la ruta `RVfpgaSoC/Labs/LabResources/Lab2/src/SweRVolfSoC` como se muestra en la siguiente figura.
 
-![Alt text](https://i.imgur.com/EJXBFSb.png)
+
+![Alt text](https://i.imgur.com/RD0lpok.png)
+
 ##### 2. Verificación de los modulos.
 
 Ahora teniendo este archivo se verifica que existan y esten exactamente los nombres de los siguientes modulos: 
 
-●	BD_bootrom_wrapper_0_0
-●	BD_gpio_wrapper_0_0
-●	BD_intcon_wrapper_bd_0_0
-●	BD_swerv_wrapper_verilog_0_0
-●	BD_syscon_wrapper_0_0
+* BD_bootrom_wrapper_0_0
+* BD_gpio_wrapper_0_0
+* BD_intcon_wrapper_bd_0_0
+* BD_swerv_wrapper_verilog_0_0
+* BD_syscon_wrapper_0_0
 
 ![Alt text](https://i.imgur.com/U6Dm4sa.png)
 
 
-
+![Alt text]()
 ## 🔖 Conclusiones
 
 *
