@@ -101,6 +101,7 @@ Para visualizar el resultado final, mediante GTKWave se abre el archivo `Trace.v
 Sin embargo primero se buscan y visulizan las señales que se ejecutan en cada sentido del núcleo RISC-V superescalar, ubicadas en el módulo _ifu_ el cuál indica la unidad de obtención de instrucciones, la ruta a seguir una vez se está en el GTKWave es `TOP/rvfpgasim/swervolf/swer_wrapper_verilog_0/swerv_eh1_2/swer/ifu` 
 
 Imagen de la ruta seguida.
+
 ![Alt text](https://i.imgur.com/tMFm1G7.png)
 
 A continuación se muestran dichas señales llamadas `ifu_i0_instr[31:0]` y `ifu_i1_instr[31:0]` el _i0_ indica la forma superescalar 0 e _i1_ la forma superescalar 1 y  a su vez `instr[21:0]` hace referencia a la instrucción de 32 bits.
