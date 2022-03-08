@@ -53,7 +53,7 @@ En la simulación se empleará una estructura cómo la que se muestra a continua
 La simulación se trabajará mediante Verilator, Primero se debe buscar el archivo generado en la primera parte (Lab1), llamado `BD.v`, para anexarlo a la ruta `RVfpgaSoC/Labs/LabResources/Lab2/src/SweRVolfSoC` como se muestra en la siguiente figura.
 
 
-![Alt text](https://i.imgur.com/RD0lpok.png)
+![Alt text](https://i.imgur.com/MuizMPG.png)
 
 ### ✔️2. Verificación de los modulos.
 
