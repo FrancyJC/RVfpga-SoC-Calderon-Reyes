@@ -29,7 +29,7 @@ Luego de tener el diagrama de bloques completo se procede a generar el archivo d
 
 ![Alt text](https://i.imgur.com/ETXEuHu.png)
 
-Al realizar la generación del _Bitstream_ se obtiene que la síntesis, implementación y generación han sido realizadas completamente. 
+Al realizar la generación del _Bitstream_ se obtiene que la síntesis, implementación y generación han sido realizadas completamente y mediante los resultados obtenidos en esta parte(Lab1), se procede a realizar la simulación del _SweRVolf SoC_.
 
 ## 📌  Segunda parte -Simulación del SweRVolfX SoC-
 
@@ -97,8 +97,23 @@ Luego de editar esta línea se procede correr la simulación y generar la traza 
 
 ### ✔️ 5. Análisis de la simulación con GTKWave.
 
+Para visualizar el resultado final, mediante GTKWave se abre el archivo `Trace.vcd` y se busca el registro en el cual se muestra la salida final.
+Sin embargo primero se buscan y visulizan las señales que se ejecutan en cada sentido del núcleo RISC-V superescalar, ubicadas en el módulo _ifu_ el cuál indica la unidad de obtención de instrucciones, la ruta a seguir una vez se está en el GTKWave es `TOP/rvfpgasim/swervolf/swer_wrapper_verilog_0/swerv_eh1_2/swer/ifu` 
 
-![Alt text]()
+Imagen de la ruta seguida.
+![Alt text](https://i.imgur.com/tMFm1G7.png)
+
+A continuación se muestran dichas señales llamadas `ifu_i0_instr[31:0]` y `ifu_i1_instr[31:0]` el _i0_ indica la forma superescalar 0 e _i1_ la forma superescalar 1 y  a su vez `instr[21:0]` hace referencia a la instrucción de 32 bits.
+
+![Alt text](https://i.imgur.com/OKtlsdn.png)
+
+Después de visualizar las señales anteriores se continua la búsqueda del registro de salida para ello se ingresa a la siguiente ruta: `TOP/rvfpgasim/swervolf/swer_wrapper_verilog_0/swerv_eh1_2/swer/dec/arf/gpr_banks(0)/gpr(28)` .
+El módulo `gprff` contiene el valor del registro `t3` que en este caso es la salida requerida,  para visualizarlo se busca dentro de este módulo a `gpr(28)` dentro de este se encuentra la señal `dout[31:0]` que muestra el contenido del registro `x28` empeleado en `AL_Operations.S`.
+
+![Alt text](https://i.imgur.com/1p5xz5G.png)
+
+En esta imagen se observa la forma en que se ejecutan las instrucciones mostrando el resultado mediante el registro mencionado anteriormente, donde se muestra que se ejecuta una a una las instrucciones dadas a reaizar, estas instrucciones están implementadas mediante assembly.
+
 
 ## ❌ Problemas presentados y solucionados.
 
@@ -119,14 +134,12 @@ Luego de correr los comandos mencionado en esta sección, se muestran estos erro
 
 Se soluciona añadiendo algunas librerías faltantes en el mismo archivo, como se muestra en la imagen.
 
-`#include<limits>`
-`#include<cstddef>`
-`#include<iostream>`
+* `#include<limits>`
+* `#include<cstddef>`
+* `#include<iostream>`
 
 ![Alt text](https://i.imgur.com/jYX7GSe.png)
 
-
-![Alt text]()
 
 ## 🔖 Conclusiones
 
