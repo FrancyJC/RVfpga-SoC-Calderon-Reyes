@@ -113,7 +113,7 @@ El módulo `gprff` contiene el valor del registro `t3` que en este caso es la sa
 
 ![Alt text](https://i.imgur.com/1p5xz5G.png)
 
-En esta imagen se observa la forma en que se ejecutan las instrucciones mostrando el resultado mediante el registro mencionado anteriormente, donde se muestra que se ejecuta una a una las instrucciones dadas a reaizar, estas instrucciones están implementadas mediante assembly.
+En esta imagen se observa la forma en que se ejecutan las instrucciones mostrando el resultado mediante el registro mencionado anteriormente, donde se visualiza que se ejecuta una a una las instrucciones dadas a realizar, estas instrucciones están implementadas mediante assembly.
 
 
 ## ❌ Problemas presentados y solucionados.
