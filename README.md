@@ -146,8 +146,9 @@ Se soluciona añadiendo algunas librerías faltantes en el mismo archivo, como s
 
 * El enfoque del curso ofrecido por Imagination, genera que el estudiante sienta curiosidad por investigar y abarcar más sobre estos temas, debido a que aunque no se tenga una FPGA física, la herramienta de simulación es muy óptima para entender del tema.
 
-* En cuanto al desarrollo de los  laboratorios muestran cómo crear un SoC a partir de un núcleo y otros componentes básicos los cuales se trabajaron en el Laboratorio 1 y luego  cómo apuntarlo a un FPGA y ejecutar programas en el SoC recién creado (Laboratorios 2)
+* En cuanto al desarrollo de los  laboratorios muestran cómo crear un SoC a partir de un núcleo y otros componentes básicos los cuales se trabajaron en el Laboratorio 1 y luego  cómo apuntarlo a un FPGA y ejecutar programas en el SoC recién creado (Laboratorio 2).
 
+* Usar en conjunto el amplio portafolio de software que permite a estudiantes y profesionales crear un SoC basado en RISC-V, implementandolo desde bloques, y obtener archivos `.v` y `.bit` los cuáles son fundamentales para poder realizar la ejecución de programas escritos en **C** o **Assembly** de manera más eficiente y realizar un debido análisis de estos mediante la herramienta GTKWave.
 
 
 ## 📚 Referencias
